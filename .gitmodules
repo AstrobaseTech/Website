@@ -1,0 +1,3 @@
+[submodule "lib/astrobase"]
+	path = lib/astrobase
+	url = git@github.com:AstrobaseTech/Astrobase.git
