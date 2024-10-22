@@ -2,7 +2,7 @@
   import ExternalLink from 'lucide-svelte/icons/external-link';
   import { Button } from '$lib/components/ui/button';
   import Icon from '$lib/components/ui/icon.svelte';
-  import './app.pcss';
+  import '../app.pcss';
 </script>
 
 <svelte:head>
