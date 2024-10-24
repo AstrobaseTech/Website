@@ -1,7 +1,7 @@
 <script>
-  import ExternalLink from 'lucide-svelte/icons/external-link';
   import Button from '$lib/components/button/button.svelte';
-  import { ghost, icon, md, outline, primary, sm } from '$lib/components/button/variants';
+  import DocsButton from '$lib/components/button/docs-button.svelte';
+  import { icon, outline, sm } from '$lib/components/button/variants';
   import Icon from '$lib/components/ui/icon.svelte';
   import '../app.pcss';
 </script>
@@ -18,10 +18,7 @@
       <div class="grow">
         <!-- <Button class={[ghost, md]} href="/blog">Blog</Button> -->
       </div>
-      <Button class={[primary, sm]} href="/docs/index.html" target="_blank">
-        <ExternalLink class="mr-2 h-4 w-4" />
-        Docs
-      </Button>
+      <DocsButton class={sm} />
     </nav>
   </header>
 

@@ -1,10 +1,9 @@
 <script lang="ts">
   import { particlesInit } from '@tsparticles/svelte';
   import { loadSlim } from '@tsparticles/slim';
-  import ExternalLink from 'lucide-svelte/icons/external-link';
   import { onMount } from 'svelte';
-  import Button from '$lib/components/button/button.svelte';
-  import { lg, primary } from '$lib/components/button/variants';
+  import DocsButton from '$lib/components/button/docs-button.svelte';
+  import { lg } from '$lib/components/button/variants';
   import { Meta, STRAPLINE } from '$lib/meta';
   import { fade, scale } from '$lib/transitions';
 
@@ -38,10 +37,7 @@
   <div class="max-w-md space-y-6" in:scale>
     <h1>{STRAPLINE}</h1>
     <p class="muted">Get started with the JavaScript SDK.</p>
-    <Button class={[primary, lg, 'w-32']} href="/docs/index.html" target="_blank">
-      <ExternalLink class="mr-2 h-4 w-4" />
-      Docs
-    </Button>
+    <DocsButton class={[lg, 'w-32']} />
   </div>
   <div></div>
 </main>
