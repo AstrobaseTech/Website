@@ -4,7 +4,8 @@
   import { onMount } from 'svelte';
   import DocsButton from '$lib/components/button/docs-button.svelte';
   import { lg } from '$lib/components/button/variants';
-  import { Meta, STRAPLINE } from '$lib/meta';
+  import Meta from '$lib/components/meta/meta.svelte';
+  import { STRAPLINE } from '$lib/components/meta/meta';
   import { fade, scale } from '$lib/transitions';
 
   void particlesInit(loadSlim);

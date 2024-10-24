@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import Button from '$lib/components/button/button.svelte';
   import DocsButton from '$lib/components/button/docs-button.svelte';
   import { icon, outline, sm } from '$lib/components/button/variants';
-  import Icon from '$lib/components/ui/icon.svelte';
+  import Icon from '$lib/components/icon/icon.svelte';
   import '../app.pcss';
 </script>
 
@@ -25,7 +25,7 @@
   <slot />
 
   <footer class="z-10 flex flex-wrap justify-center space-x-6 border-t bg-background py-16">
-    {#each [['github', 'https://github.com/AstrobaseTech', '22px'], ['x', 'https://x.com/librebase', '18px']] as [id, href, size]}
+    {#each [['github', 'https://github.com/AstrobaseTech', '22px'], ['x', 'https://x.com/librebase', '18px']] as const as [id, href, size]}
       <Button class={[outline, icon]} {href} target="_blank" rel="noreferrer noopener">
         <Icon {id} height={size} width={size} />
       </Button>
