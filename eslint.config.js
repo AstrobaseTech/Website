@@ -1,4 +1,3 @@
-// @ts-expect-error
 import eslint from '@eslint/js';
 // @ts-expect-error
 import prettier from 'eslint-config-prettier';
@@ -27,6 +26,7 @@ export default ts.config(
       '@typescript-eslint/ban-ts-comment': 'off',
       'no-console': 'error',
       'no-debugger': 'error',
+      'svelte/valid-compile': 'warn',
     },
   },
 );
