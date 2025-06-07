@@ -4,6 +4,9 @@ on:
   push:
     branches: 'master'
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,12 +20,15 @@ jobs:
           node-version: 20
           cache: npm
 
-      - run: npm ci --legacy-peer-deps
+      - run: npm ci
+
+      - run: ls -al astrobase
+
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: build/
+          path: dist/
 
   deploy:
     needs: build

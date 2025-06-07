@@ -1,9 +1,9 @@
 {
   "printWidth": 100,
   "singleQuote": true,
-  "plugins": ["prettier-plugin-jsdoc", "prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-jsdoc", "prettier-plugin-tailwindcss"],
   "overrides": [
-    { "files": "*.svelte", "options": { "parser": "svelte" } },
+    { "files": "*.astro", "options": { "parser": "astro" } },
     { "files": "*.svg", "options": { "parser": "html" } }
   ]
 }

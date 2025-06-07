@@ -1,3 +1,8 @@
-.svelte-kit/
-build/
+.astro/
+dist/
 node_modules/
+
+src/content/docs/sdk/docs/api
+
+*.db
+*.env*

@@ -1,0 +1,43 @@
+---
+template: splash
+
+title: The Frontier of Digital Freedom
+
+description: |
+  Take back control of your digital identity.
+
+hero:
+  tagline: |
+    Imagine an internet where end-to-end encryption, privacy, and freedom are the default.
+    From protocols to applications, let's take back our autonomy from big tech.
+  actions:
+    - text: Try the Astrobase SDK
+      link: sdk
+      icon: right-arrow
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import bgImage from '../../assets/hero-bg.webp';
+
+<div
+  class="absolute left-0 top-0 -z-10 w-full bg-cover bg-center"
+  style={`background-image: url(${bgImage.src}); height: 650px`}
+>
+  <div class="h-full opacity-75" style="background: var(--sl-color-bg)"></div>
+</div>
+
+## Our Projects
+
+<CardGrid>
+  <LinkCard
+    href="luna"
+    title="Luna Suite"
+    description="The privacy-respecting productivity suite that gives you control of your data. Powered by Astrobase."
+  />
+  <LinkCard
+    href="sdk"
+    title="Astrobase SDK"
+    description="An extensible protocol suite for building multi-user apps with native privacy, security, and self-autonomy."
+  />
+</CardGrid>
