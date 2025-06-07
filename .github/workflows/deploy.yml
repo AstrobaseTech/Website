@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: 'master'
+    branches: master
 
 permissions:
   contents: read
@@ -21,9 +21,6 @@ jobs:
           cache: npm
 
       - run: npm ci
-
-      - run: ls -al astrobase
-
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

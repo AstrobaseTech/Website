@@ -5,7 +5,7 @@ template: splash
 hero:
   tagline: Build multi-user apps with native privacy, security, and self-autonomy. Get started with the JavaScript SDK.
   actions:
-    - text: Get Started
+    - text: Read the docs
       link: /sdk/docs/
       icon: right-arrow
     - text: GitHub
@@ -23,3 +23,7 @@ hero:
         target: _blank
         rel: noopener noreferrer
 ---
+
+```sh
+npm install @astrobase/sdk
+```

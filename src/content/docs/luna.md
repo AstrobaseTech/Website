@@ -1,9 +1,9 @@
 ---
 title: Luna Suite
-description: The privacy-respecting productivity suite that gives you control of your data. Powered by Astrobase.
+description: The privacy-respecting suite of applications that leaves you with ultimate control of your data.
 template: splash
 hero:
-  tagline: 'Coming soon: A privacy-respecting productivity suite that gives you control of your data.'
+  tagline: 'Coming soon: A privacy-respecting suite of applications that leaves you with ultimate control of your data.'
   actions:
     - text: Follow on GitHub
       link: https://github.com/aidlran/luna
