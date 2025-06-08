@@ -8,7 +8,7 @@
     "astrobase"
   ],
   "scripts": {
-    "prebuild": "git submodule init && cd astrobase && git checkout ee7866e8aa0ee16238a1af122799cd4ae39f6a98",
+    "preinstall": "git submodule init && cd astrobase && git checkout 367c75aebab775dd3349ca1fedbc5da8b0362b24",
     "build": "astro build",
     "ci": "npm run build && npm run lint",
     "format": "prettier --write .",

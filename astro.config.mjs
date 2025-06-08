@@ -20,6 +20,8 @@ export default defineConfig({
       ],
       sidebar: [
         { label: `Astrobase SDK v${astrobasePackageJson.version}`, slug: 'sdk/docs' },
+        { label: 'Concepts', autogenerate: { directory: 'sdk/docs/concepts' } },
+        { label: 'Guides', autogenerate: { directory: 'sdk/docs/guides' } },
         typeDocSidebarGroup,
       ],
       customCss: ['./src/styles/global.css'],
@@ -31,6 +33,7 @@ export default defineConfig({
           ),
           output: 'sdk/docs/api',
           sidebar: {
+            collapsed: true,
             label: 'API Reference',
           },
         }),
